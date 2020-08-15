@@ -1,0 +1,15 @@
+﻿<Properties StartupItem="Assembly-CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Editor\Menu.cs">
+    <Files>
+      <File FileName="Assets\Editor\ScriptCreateInit.cs" Line="18" Column="29" />
+      <File FileName="Assets\Editor\Menu.cs" Line="27" Column="4" />
+      <File FileName="Assets\Editor\CWBWindow.cs" Line="26" Column="37" />
+      <File FileName="Assets\Script\Test\TestMMOMemory.cs" Line="90" Column="3" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

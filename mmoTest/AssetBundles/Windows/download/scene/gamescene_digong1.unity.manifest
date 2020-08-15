@@ -1,0 +1,14 @@
+ManifestFileVersion: 0
+CRC: 2225381988
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 04f46523c510ca3fffd7de0e0075dff9
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 31d6cfe0d16ae931b73c59d7e0c089c0
+HashAppended: 0
+ClassTypes: []
+Assets:
+- Assets/Download/Scene/GameScene_DiGong1.unity
+Dependencies: []

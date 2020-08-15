@@ -1,0 +1,14 @@
+ManifestFileVersion: 0
+CRC: 4053881936
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 928ea74932f573a297c239d40874ceba
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 31d6cfe0d16ae931b73c59d7e0c089c0
+HashAppended: 0
+ClassTypes: []
+Assets:
+- Assets/Download/Scene/GameScene_XueDi2.unity
+Dependencies: []

@@ -1,0 +1,611 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace></RootNamespace>
+    <ProjectGuid>{28C05324-93D3-C3A7-4B9B-2BB3383667D1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_5_6_3;UNITY_5_6;UNITY_5;UNITY_ANALYTICS;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_GENERICS;ENABLE_PVR_GI;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_RUNTIME_NAVMESH_BUILDING;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_NATIVE_ARRAY;INCLUDE_DYNAMIC_GI;INCLUDE_GI;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_SCRIPTING_NEW_CSHARP_COMPILER;ENABLE_VIDEO;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_EVENT_QUEUE;ENABLE_CLUSTERINPUT;ENABLE_VR;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_2_0_SUBSET;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_NATIVE_ARRAY_CHECKS;UNITY_TEAM_LICENSE;DEBUG_LOG;DISABLE_ASSETBUNDLE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Temp\bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UnityEngine">
+      <HintPath>E:/UnityEditor5.6.3/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>E:/UnityEditor5.6.3/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\AstarPathfindingProject\Core\AI\AILerp.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Core\AI\AIPath.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Core\AI\NavmeshController.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Core\AI\RichAI.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Core\AI\RichPath.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Core\AI\Seeker.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Core\AstarData.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Core\AstarMath.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Core\AstarPath.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Core\GraphUpdateScene.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Core\GraphUpdateShape.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Core\Misc\AnimationLink.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Core\Misc\AstarDebugger.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Core\Misc\AstarEnumFlagAttr.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Core\Misc\BinaryHeap.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Core\Misc\GraphEditorBase.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Core\Misc\GraphModifier.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Core\Misc\GraphUpdateProcessor.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Core\Misc\Int3.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Core\Misc\ListPool.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Core\Misc\NodeLink.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Core\Misc\NodeLink2.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Core\Misc\NodeLink3.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Core\Misc\ObjectPool.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Core\Misc\PathPool.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Core\Misc\PathProcessor.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Core\Misc\PathReturnQueue.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Core\Misc\StackPool.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Core\Misc\ThreadControlQueue.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Core\Misc\WindowsStoreCompatibility.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Core\Misc\WorkItemProcessor.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Core\Nodes\GraphNode.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Core\Path.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Core\PathHandler.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Core\RVO\RVOAgent.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Core\RVO\RVOCoreObstacle.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Core\RVO\RVOCoreSimulator.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Core\RVO\RVOLine.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Core\RVO\RVOQuadtree.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Core\Serialization\JsonConverters.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Core\Serialization\JsonSerializer.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Core\Serialization\SimpleJsonReplacement.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Core\Serialization\SimpleZipReplacement.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Core\astarclasses.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\ExampleScenes\Example11_RVO\GroupController.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\ExampleScenes\Example11_RVO\LightweightRVO.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\ExampleScenes\Example11_RVO\RVOAgentPlacer.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\ExampleScenes\Example11_RVO\RVOExampleAgent.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\ExampleScenes\Example12_Procedural\ProceduralGridMover.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\ExampleScenes\Example12_Procedural\ProceduralWorld.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\ExampleScenes\Example13_Moving\BezierMover.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\ExampleScenes\Example13_Moving\LocalSpaceGraph.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\ExampleScenes\Example13_Moving\LocalSpaceRichAI.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\ExampleScenes\Example8_PathTypes\PathTypesDemo.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\ExampleScenes\ExampleScripts\AIFollow.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\ExampleScenes\ExampleScripts\AstarSmoothFollow2.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\ExampleScenes\ExampleScripts\DoorController.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\ExampleScenes\ExampleScripts\DynamicGridObstacle.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\ExampleScenes\ExampleScripts\MineBotAI.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\ExampleScenes\ExampleScripts\NavmeshClamp.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\ExampleScenes\ExampleScripts\ObjectPlacer.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\ExampleScenes\ExampleScripts\RecastTileUpdate.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\ExampleScenes\ExampleScripts\RecastTileUpdateHandler.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\ExampleScenes\ExampleScripts\TargetMover.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Generators\Base.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Generators\GridGenerator.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Generators\LayerGridGraphGenerator.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Generators\NavMeshGenerator.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Generators\NodeClasses\GridNode.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Generators\NodeClasses\PointNode.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Generators\NodeClasses\TriangleMeshNode.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Generators\PointGenerator.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Generators\QuadtreeGraph.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Generators\RecastGenerator.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Generators\Utilities\BBTree.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Generators\Utilities\EuclideanEmbedding.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Generators\Utilities\NavMeshRenderer.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Generators\Utilities\ObjImporter.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Generators\Utilities\RecastBBTree.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Generators\Utilities\RecastMeshGatherer.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Generators\Utilities\RecastMeshObj.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Generators\Utilities\TileHandler.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Generators\Utilities\Voxels\DebugUtility.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Generators\Utilities\Voxels\VoxelClasses.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Generators\Utilities\Voxels\VoxelContour.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Generators\Utilities\Voxels\VoxelMesh.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Generators\Utilities\Voxels\VoxelPolygonClipper.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Generators\Utilities\Voxels\VoxelRasterization.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Generators\Utilities\Voxels\VoxelRegion.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Generators\Utilities\Voxels\VoxelUtility.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Modifiers\AdvancedSmooth.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Modifiers\AlternativePath.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Modifiers\FunnelModifier.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Modifiers\Modifiers.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Modifiers\RadiusModifier.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Modifiers\RaycastModifier.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Modifiers\SimpleSmoothModifier.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Modifiers\StartEndModifier.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Navmesh\NavmeshAdd.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Navmesh\NavmeshCut.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Navmesh\RelevantGraphSurface.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Navmesh\TileHandlerHelper.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Pathfinders\ABPath.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Pathfinders\ConstantPath.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Pathfinders\FleePath.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Pathfinders\FloodPath.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Pathfinders\FloodPathTracer.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Pathfinders\MultiTargetPath.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Pathfinders\RandomPath.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Pathfinders\XPath.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\RVO\RVOController.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\RVO\RVONavmesh.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\RVO\RVOObstacle.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\RVO\RVOSimulator.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\RVO\RVOSquareObstacle.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Utilities\AstarChecksum.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Utilities\AstarMemory.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Utilities\AstarParallel.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Utilities\AstarProfiler.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Utilities\DotNetReplacements.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Utilities\GraphUpdateUtilities.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Utilities\LockFreeStack.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Utilities\PathUtilities.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Utilities\ProfileHelper.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Utilities\UnityReferenceHelper.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\changelog.cs" />
+     <Compile Include="Assets\Demigiant\DOTween\Modules\DOTweenModuleAudio.cs" />
+     <Compile Include="Assets\Demigiant\DOTween\Modules\DOTweenModulePhysics.cs" />
+     <Compile Include="Assets\Demigiant\DOTween\Modules\DOTweenModulePhysics2D.cs" />
+     <Compile Include="Assets\Demigiant\DOTween\Modules\DOTweenModuleSprite.cs" />
+     <Compile Include="Assets\Demigiant\DOTween\Modules\DOTweenModuleUI.cs" />
+     <Compile Include="Assets\Demigiant\DOTween\Modules\DOTweenModuleUnityVersion.cs" />
+     <Compile Include="Assets\Demigiant\DOTween\Modules\DOTweenModuleUtils.cs" />
+     <Compile Include="Assets\OtherTest\CreateImage.cs" />
+     <Compile Include="Assets\PoolManagerExampleFiles\Scripts\CreationExample.cs" />
+     <Compile Include="Assets\PoolManagerExampleFiles\Scripts\DeleteAndCreateInSameFrame.cs" />
+     <Compile Include="Assets\PoolManagerExampleFiles\Scripts\InstanceHandlerDelegateExample.cs" />
+     <Compile Include="Assets\PoolManagerExampleFiles\Scripts\OnCreatedDelegateExample.cs" />
+     <Compile Include="Assets\PoolManagerExampleFiles\Scripts\OnSpawnedExample.cs" />
+     <Compile Include="Assets\PoolManagerExampleFiles\Scripts\ParticleWaitTest.cs" />
+     <Compile Include="Assets\PoolManagerExampleFiles\Scripts\ReallySimpleAudioSpawner.cs" />
+     <Compile Include="Assets\PoolManagerExampleFiles\Scripts\ReallySimpleParticleSpawner.cs" />
+     <Compile Include="Assets\PoolManagerExampleFiles\Scripts\SimpleSpawner.cs" />
+     <Compile Include="Assets\Script\Camera\CameraCtrl.cs" />
+     <Compile Include="Assets\Script\Camera\CameraFollow.cs" />
+     <Compile Include="Assets\Script\Camera\FingerEventCenter.cs" />
+     <Compile Include="Assets\Script\Camera\Player.cs" />
+     <Compile Include="Assets\Script\Camera\UI_Camera.cs" />
+     <Compile Include="Assets\Script\Common\AssetBundle\AssetBundleLoader.cs" />
+     <Compile Include="Assets\Script\Common\AssetBundle\AssetBundleLoaderAsync.cs" />
+     <Compile Include="Assets\Script\Common\AssetBundle\AssetBundleMgr.cs" />
+     <Compile Include="Assets\Script\Common\Core\AppDebug.cs" />
+     <Compile Include="Assets\Script\Common\Core\Crc16.cs" />
+     <Compile Include="Assets\Script\Common\Core\DeviceUtil.cs" />
+     <Compile Include="Assets\Script\Common\Core\Dispatcher\DispatcherBase.cs" />
+     <Compile Include="Assets\Script\Common\Core\Dispatcher\SocketDispatcher.cs" />
+     <Compile Include="Assets\Script\Common\Core\Dispatcher\UIDispatcher.cs" />
+     <Compile Include="Assets\Script\Common\Core\GameDataTableParser.cs" />
+     <Compile Include="Assets\Script\Common\Core\IProto.cs" />
+     <Compile Include="Assets\Script\Common\Core\LocalFileMgr.cs" />
+     <Compile Include="Assets\Script\Common\Core\SecurityUtil.cs" />
+     <Compile Include="Assets\Script\Common\Core\TransferData.cs" />
+     <Compile Include="Assets\Script\Common\Core\ZlibHelper.cs" />
+     <Compile Include="Assets\Script\Common\Core\zlib_NET_104\Adler32.cs" />
+     <Compile Include="Assets\Script\Common\Core\zlib_NET_104\Deflate.cs" />
+     <Compile Include="Assets\Script\Common\Core\zlib_NET_104\InfBlocks.cs" />
+     <Compile Include="Assets\Script\Common\Core\zlib_NET_104\InfCodes.cs" />
+     <Compile Include="Assets\Script\Common\Core\zlib_NET_104\InfTree.cs" />
+     <Compile Include="Assets\Script\Common\Core\zlib_NET_104\Inflate.cs" />
+     <Compile Include="Assets\Script\Common\Core\zlib_NET_104\StaticTree.cs" />
+     <Compile Include="Assets\Script\Common\Core\zlib_NET_104\SupportClass.cs" />
+     <Compile Include="Assets\Script\Common\Core\zlib_NET_104\Tree.cs" />
+     <Compile Include="Assets\Script\Common\Core\zlib_NET_104\ZInputStream.cs" />
+     <Compile Include="Assets\Script\Common\Core\zlib_NET_104\ZOutputStream.cs" />
+     <Compile Include="Assets\Script\Common\Core\zlib_NET_104\ZStream.cs" />
+     <Compile Include="Assets\Script\Common\Core\zlib_NET_104\ZStreamException.cs" />
+     <Compile Include="Assets\Script\Common\Core\zlib_NET_104\Zlib.cs" />
+     <Compile Include="Assets\Script\Common\Define\ConstDefine.cs" />
+     <Compile Include="Assets\Script\Common\Define\DelegateDefine.cs" />
+     <Compile Include="Assets\Script\Common\Define\EnumDefine.cs" />
+     <Compile Include="Assets\Script\Common\Download\AssetBundleDownload.cs" />
+     <Compile Include="Assets\Script\Common\Download\AssetBundleDownloadRoutine.cs" />
+     <Compile Include="Assets\Script\Common\Download\DownloadDataEntity.cs" />
+     <Compile Include="Assets\Script\Common\Download\DownloadMgr.cs" />
+     <Compile Include="Assets\Script\Common\GlobalInit.cs" />
+     <Compile Include="Assets\Script\Common\MFEncryptUtil.cs" />
+     <Compile Include="Assets\Script\Common\MMO_MemoryStream.cs" />
+     <Compile Include="Assets\Script\Common\MeshRender\MeshLightmapSetting.cs" />
+     <Compile Include="Assets\Script\Common\MeshRender\SerializedLightmapSetting.cs" />
+     <Compile Include="Assets\Script\Common\Net\NetWorkHttp.cs" />
+     <Compile Include="Assets\Script\Common\Net\NetWorkSocket.cs" />
+     <Compile Include="Assets\Script\Common\Net\ReturnValue.cs" />
+     <Compile Include="Assets\Script\Common\ResourcesLoad\EffectMgr.cs" />
+     <Compile Include="Assets\Script\Common\ResourcesLoad\ResourcesManager.cs" />
+     <Compile Include="Assets\Script\Common\ResourcesLoad\RoleMgr.cs" />
+     <Compile Include="Assets\Script\Common\ResourcesLoad\SpriteLoader.cs" />
+     <Compile Include="Assets\Script\Common\ResourcesLoad\TextureLoader.cs" />
+     <Compile Include="Assets\Script\Common\Singleton.cs" />
+     <Compile Include="Assets\Script\Common\SingletonMono.cs" />
+     <Compile Include="Assets\Script\Common\Stat.cs" />
+     <Compile Include="Assets\Script\Common\TimeMgr.cs" />
+     <Compile Include="Assets\Script\Common\TipEntity.cs" />
+     <Compile Include="Assets\Script\Data\Base\AbstractDBModel.cs" />
+     <Compile Include="Assets\Script\Data\Base\AbstractEntity.cs" />
+     <Compile Include="Assets\Script\Data\LocalData\Create\GameLevel\DBModel\ChapterDBModel.cs" />
+     <Compile Include="Assets\Script\Data\LocalData\Create\GameLevel\DBModel\GameLevelDBModel.cs" />
+     <Compile Include="Assets\Script\Data\LocalData\Create\GameLevel\DBModel\GameLevelGradeDBModel.cs" />
+     <Compile Include="Assets\Script\Data\LocalData\Create\GameLevel\DBModel\GameLevelMonsterDBModel.cs" />
+     <Compile Include="Assets\Script\Data\LocalData\Create\GameLevel\DBModel\GameLevelRegionDBModel.cs" />
+     <Compile Include="Assets\Script\Data\LocalData\Create\GameLevel\DBModel\SpriteDBModel.cs" />
+     <Compile Include="Assets\Script\Data\LocalData\Create\GameLevel\Entity\ChapterEntity.cs" />
+     <Compile Include="Assets\Script\Data\LocalData\Create\GameLevel\Entity\GameLevelEntity.cs" />
+     <Compile Include="Assets\Script\Data\LocalData\Create\GameLevel\Entity\GameLevelGradeEntity.cs" />
+     <Compile Include="Assets\Script\Data\LocalData\Create\GameLevel\Entity\GameLevelMonsterEntity.cs" />
+     <Compile Include="Assets\Script\Data\LocalData\Create\GameLevel\Entity\GameLevelRegionEntity.cs" />
+     <Compile Include="Assets\Script\Data\LocalData\Create\GameLevel\Entity\SpriteEntity.cs" />
+     <Compile Include="Assets\Script\Data\LocalData\Create\Knapsack\DBModel\EquipDBModel.cs" />
+     <Compile Include="Assets\Script\Data\LocalData\Create\Knapsack\DBModel\ItemDBModel.cs" />
+     <Compile Include="Assets\Script\Data\LocalData\Create\Knapsack\DBModel\MaterialDBModel.cs" />
+     <Compile Include="Assets\Script\Data\LocalData\Create\Knapsack\Entity\EquipEntity.cs" />
+     <Compile Include="Assets\Script\Data\LocalData\Create\Knapsack\Entity\ItemEntity.cs" />
+     <Compile Include="Assets\Script\Data\LocalData\Create\Knapsack\Entity\MaterialEntity.cs" />
+     <Compile Include="Assets\Script\Data\LocalData\Create\LanguageDBModel.cs" />
+     <Compile Include="Assets\Script\Data\LocalData\Create\LanguageEntity.cs" />
+     <Compile Include="Assets\Script\Data\LocalData\Create\MessageDBModel.cs" />
+     <Compile Include="Assets\Script\Data\LocalData\Create\MessageEntity.cs" />
+     <Compile Include="Assets\Script\Data\LocalData\Create\ProductDBModel.cs" />
+     <Compile Include="Assets\Script\Data\LocalData\Create\ProductEntity.cs" />
+     <Compile Include="Assets\Script\Data\LocalData\Create\RechargeShopDBModel.cs" />
+     <Compile Include="Assets\Script\Data\LocalData\Create\RechargeShopEntity.cs" />
+     <Compile Include="Assets\Script\Data\LocalData\Create\Role\DBModel\JobDBModel.cs" />
+     <Compile Include="Assets\Script\Data\LocalData\Create\Role\DBModel\JobLevelDBModel.cs" />
+     <Compile Include="Assets\Script\Data\LocalData\Create\Role\DBModel\SkillDBModel.cs" />
+     <Compile Include="Assets\Script\Data\LocalData\Create\Role\DBModel\SkillLevelDBModel.cs" />
+     <Compile Include="Assets\Script\Data\LocalData\Create\Role\DBModel\TaskDBModel.cs" />
+     <Compile Include="Assets\Script\Data\LocalData\Create\Role\Entity\JobEntity.cs" />
+     <Compile Include="Assets\Script\Data\LocalData\Create\Role\Entity\JobLevelEntity.cs" />
+     <Compile Include="Assets\Script\Data\LocalData\Create\Role\Entity\SkillEntity.cs" />
+     <Compile Include="Assets\Script\Data\LocalData\Create\Role\Entity\SkillLevelEntity.cs" />
+     <Compile Include="Assets\Script\Data\LocalData\Create\Role\Entity\TaskEntity.cs" />
+     <Compile Include="Assets\Script\Data\LocalData\Create\ShopCategoryDBModel.cs" />
+     <Compile Include="Assets\Script\Data\LocalData\Create\ShopCategoryEntity.cs" />
+     <Compile Include="Assets\Script\Data\LocalData\Create\ShopDBModel.cs" />
+     <Compile Include="Assets\Script\Data\LocalData\Create\ShopEntity.cs" />
+     <Compile Include="Assets\Script\Data\LocalData\Create\WorldMap\DBModel\NPCDBModel.cs" />
+     <Compile Include="Assets\Script\Data\LocalData\Create\WorldMap\DBModel\WorldMapDBModel.cs" />
+     <Compile Include="Assets\Script\Data\LocalData\Create\WorldMap\Entity\NPCEntity.cs" />
+     <Compile Include="Assets\Script\Data\LocalData\Create\WorldMap\Entity\WorldMapEntity.cs" />
+     <Compile Include="Assets\Script\Data\LocalData\Ext\DBModel\GameLevelDBModelExt.cs" />
+     <Compile Include="Assets\Script\Data\LocalData\Ext\DBModel\GameLevelGradeDBModelExt.cs" />
+     <Compile Include="Assets\Script\Data\LocalData\Ext\DBModel\GameLevelMonsterDBModelExt.cs" />
+     <Compile Include="Assets\Script\Data\LocalData\Ext\DBModel\GameLevelRegionDBModelExt.cs" />
+     <Compile Include="Assets\Script\Data\LocalData\Ext\DBModel\ProductDBModelExt.cs" />
+     <Compile Include="Assets\Script\Data\LocalData\Ext\DBModel\SkillLevelDBModelExt.cs" />
+     <Compile Include="Assets\Script\Data\LocalData\Ext\Entity\GameLevelEntityExt.cs" />
+     <Compile Include="Assets\Script\Data\LocalData\Ext\Entity\GameLevelGradeEntityExt.cs" />
+     <Compile Include="Assets\Script\Data\LocalData\Ext\Entity\GetGoodsEntity.cs" />
+     <Compile Include="Assets\Script\Data\LocalData\Ext\Entity\GoodsEntity.cs" />
+     <Compile Include="Assets\Script\Data\LocalData\Ext\Entity\NPCWorldMapData.cs" />
+     <Compile Include="Assets\Script\Data\LocalData\Ext\Entity\SpriteEntityExt.cs" />
+     <Compile Include="Assets\Script\Data\LocalData\Ext\Entity\TransPointWorldMapData.cs" />
+     <Compile Include="Assets\Script\Data\LocalData\Ext\Entity\WorldMapEntityExt.cs" />
+     <Compile Include="Assets\Script\Data\NetData\Entity\RetAccountEntity.cs" />
+     <Compile Include="Assets\Script\Data\NetData\Entity\RetGameServerEntity.cs" />
+     <Compile Include="Assets\Script\Data\NetData\Entity\RetGameServerPageEntity.cs" />
+     <Compile Include="Assets\Script\Data\Proto\GameLevel\Return\GameLevel_EnterReturnProto.cs" />
+     <Compile Include="Assets\Script\Data\Proto\GameLevel\Return\GameLevel_FailReturnProto.cs" />
+     <Compile Include="Assets\Script\Data\Proto\GameLevel\Return\GameLevel_ResurgenceReturnProto.cs" />
+     <Compile Include="Assets\Script\Data\Proto\GameLevel\Return\GameLevel_VictoryReturnProto.cs" />
+     <Compile Include="Assets\Script\Data\Proto\GameLevel\Send\GameLevel_EnterProto.cs" />
+     <Compile Include="Assets\Script\Data\Proto\GameLevel\Send\GameLevel_FailProto.cs" />
+     <Compile Include="Assets\Script\Data\Proto\GameLevel\Send\GameLevel_ResurgenceProto.cs" />
+     <Compile Include="Assets\Script\Data\Proto\GameLevel\Send\GameLevel_VictoryProto.cs" />
+     <Compile Include="Assets\Script\Data\Proto\ProtoCodeDef.cs" />
+     <Compile Include="Assets\Script\Data\Proto\Role\Return\RoleData_SkillReturnProto.cs" />
+     <Compile Include="Assets\Script\Data\Proto\Role\Return\RoleOperation_CreateRoleReturnProto.cs" />
+     <Compile Include="Assets\Script\Data\Proto\Role\Return\RoleOperation_DeleteRoleReturnProto.cs" />
+     <Compile Include="Assets\Script\Data\Proto\Role\Return\RoleOperation_EnterGameReturnProto.cs" />
+     <Compile Include="Assets\Script\Data\Proto\Role\Return\RoleOperation_LogOnGameServerReturnProto.cs" />
+     <Compile Include="Assets\Script\Data\Proto\Role\Return\RoleOperation_SelectRoleInfoReturnProto.cs" />
+     <Compile Include="Assets\Script\Data\Proto\Role\Send\RoleOperation_CreateRoleProto.cs" />
+     <Compile Include="Assets\Script\Data\Proto\Role\Send\RoleOperation_DeleteRoleProto.cs" />
+     <Compile Include="Assets\Script\Data\Proto\Role\Send\RoleOperation_EnterGameProto.cs" />
+     <Compile Include="Assets\Script\Data\Proto\Role\Send\RoleOperation_LogOnGameServerProto.cs" />
+     <Compile Include="Assets\Script\Data\Proto\Role\Send\RoleOperation_SelectRoleInfoProto.cs" />
+     <Compile Include="Assets\Script\Data\Proto\System\System_GameServerConfigReturnProto.cs" />
+     <Compile Include="Assets\Script\Data\Proto\System\System_SendLocalTimeProto.cs" />
+     <Compile Include="Assets\Script\Data\Proto\System\System_ServerTimeReturnProto.cs" />
+     <Compile Include="Assets\Script\Data\Proto\Task\Task_SearchTaskProto.cs" />
+     <Compile Include="Assets\Script\Data\Proto\Task\Task_SearchTaskReturnProto.cs" />
+     <Compile Include="Assets\Script\Data\Proto\Test\Mail_Get_DetailProto.cs" />
+     <Compile Include="Assets\Script\Data\Proto\Test\Mail_Request_ListProto.cs" />
+     <Compile Include="Assets\Script\Data\Proto\Test\TestProto.cs" />
+     <Compile Include="Assets\Script\Data\Proto\WorldMap\WorldMap_CurrRoleMoveProto.cs" />
+     <Compile Include="Assets\Script\Data\Proto\WorldMap\WorldMap_CurrRoleResurgenceProto.cs" />
+     <Compile Include="Assets\Script\Data\Proto\WorldMap\WorldMap_CurrRoleUpdateInfoProto.cs" />
+     <Compile Include="Assets\Script\Data\Proto\WorldMap\WorldMap_CurrRoleUseSkillProto.cs" />
+     <Compile Include="Assets\Script\Data\Proto\WorldMap\WorldMap_InitRoleProto.cs" />
+     <Compile Include="Assets\Script\Data\Proto\WorldMap\WorldMap_OtherRoleDieProto.cs" />
+     <Compile Include="Assets\Script\Data\Proto\WorldMap\WorldMap_OtherRoleEnterProto.cs" />
+     <Compile Include="Assets\Script\Data\Proto\WorldMap\WorldMap_OtherRoleLeaveProto.cs" />
+     <Compile Include="Assets\Script\Data\Proto\WorldMap\WorldMap_OtherRoleMoveProto.cs" />
+     <Compile Include="Assets\Script\Data\Proto\WorldMap\WorldMap_OtherRoleResurgenceProto.cs" />
+     <Compile Include="Assets\Script\Data\Proto\WorldMap\WorldMap_OtherRoleUpdateInfoProto.cs" />
+     <Compile Include="Assets\Script\Data\Proto\WorldMap\WorldMap_OtherRoleUseSkillProto.cs" />
+     <Compile Include="Assets\Script\Data\Proto\WorldMap\WorldMap_PosProto.cs" />
+     <Compile Include="Assets\Script\Data\Proto\WorldMap\WorldMap_RoleAlreadyEnterProto.cs" />
+     <Compile Include="Assets\Script\Data\Proto\WorldMap\WorldMap_RoleEnterProto.cs" />
+     <Compile Include="Assets\Script\Data\Proto\WorldMap\WorldMap_RoleEnterReturnProto.cs" />
+     <Compile Include="Assets\Script\NPC\NPCCtrl.cs" />
+     <Compile Include="Assets\Script\NPC\NPCHeadBarView.cs" />
+     <Compile Include="Assets\Script\NPC\NPCInfo.cs" />
+     <Compile Include="Assets\Script\PlayerControl\ActorController.cs" />
+     <Compile Include="Assets\Script\PlayerControl\CameraController.cs" />
+     <Compile Include="Assets\Script\PlayerControl\IUserInput.cs" />
+     <Compile Include="Assets\Script\PlayerControl\KeyboardInput.cs" />
+     <Compile Include="Assets\Script\PlayerControl\OnGroundSensor.cs" />
+     <Compile Include="Assets\Script\Role\AI\GameLevel_RoleMonsterAI.cs" />
+     <Compile Include="Assets\Script\Role\AI\IRoleAI.cs" />
+     <Compile Include="Assets\Script\Role\AI\OtherRoleAI.cs" />
+     <Compile Include="Assets\Script\Role\AI\RoleMainPlayerCityAI.cs" />
+     <Compile Include="Assets\Script\Role\FSM\RoleFSMMgr.cs" />
+     <Compile Include="Assets\Script\Role\FSM\State\RoleStateAbstract.cs" />
+     <Compile Include="Assets\Script\Role\FSM\State\RoleStateAttack.cs" />
+     <Compile Include="Assets\Script\Role\FSM\State\RoleStateDie.cs" />
+     <Compile Include="Assets\Script\Role\FSM\State\RoleStateHurt.cs" />
+     <Compile Include="Assets\Script\Role\FSM\State\RoleStateIdle.cs" />
+     <Compile Include="Assets\Script\Role\FSM\State\RoleStateRun.cs" />
+     <Compile Include="Assets\Script\Role\FSM\State\RoleStateSelect.cs" />
+     <Compile Include="Assets\Script\Role\RoleAttack.cs" />
+     <Compile Include="Assets\Script\Role\RoleAttackInfo.cs" />
+     <Compile Include="Assets\Script\Role\RoleCtrl.cs" />
+     <Compile Include="Assets\Script\Role\RoleHeadBarRoot.cs" />
+     <Compile Include="Assets\Script\Role\RoleHeadBarView.cs" />
+     <Compile Include="Assets\Script\Role\RoleHurt.cs" />
+     <Compile Include="Assets\Script\Role\RoleInfo\RoleInfoBase.cs" />
+     <Compile Include="Assets\Script\Role\RoleInfo\RoleInfoMainPlayer.cs" />
+     <Compile Include="Assets\Script\Role\RoleInfo\RoleInfoMonster.cs" />
+     <Compile Include="Assets\Script\Role\RoleInfo\RoleInfoSkill.cs" />
+     <Compile Include="Assets\Script\Role\RoleTransferAttackInfo.cs" />
+     <Compile Include="Assets\Script\SceneCtrl\SceneCtrl\GameSceneCtrl\GameLevel\GameLevelDoorCtrl.cs" />
+     <Compile Include="Assets\Script\SceneCtrl\SceneCtrl\GameSceneCtrl\GameLevel\GameLevelRegionCtrl.cs" />
+     <Compile Include="Assets\Script\SceneCtrl\SceneCtrl\GameSceneCtrl\GameLevelSceneCtrl.cs" />
+     <Compile Include="Assets\Script\SceneCtrl\SceneCtrl\GameSceneCtrl\GameSceneCtrlBase.cs" />
+     <Compile Include="Assets\Script\SceneCtrl\SceneCtrl\GameSceneCtrl\GameSceneCtrlMgr.cs" />
+     <Compile Include="Assets\Script\SceneCtrl\SceneCtrl\GameSceneCtrl\WorldMap\WorldMapTransCtrl.cs" />
+     <Compile Include="Assets\Script\SceneCtrl\SceneCtrl\GameSceneCtrl\WorldMapSceneCtrl.cs" />
+     <Compile Include="Assets\Script\SceneCtrl\SceneCtrl\InitSceneCtrl.cs" />
+     <Compile Include="Assets\Script\SceneCtrl\SceneCtrl\LoadingSceneCtrl.cs" />
+     <Compile Include="Assets\Script\SceneCtrl\SceneCtrl\LogOnSceneCtrl.cs" />
+     <Compile Include="Assets\Script\SceneCtrl\SceneCtrl\SelectRoleSceneCtrl.cs" />
+     <Compile Include="Assets\Script\SceneCtrl\SceneMgr.cs" />
+     <Compile Include="Assets\Script\SystemController\AccountController.cs" />
+     <Compile Include="Assets\Script\SystemController\Base\ISystemController.cs" />
+     <Compile Include="Assets\Script\SystemController\Base\SystemControllerBase.cs" />
+     <Compile Include="Assets\Script\SystemController\GameLevelController.cs" />
+     <Compile Include="Assets\Script\SystemController\GameServerController.cs" />
+     <Compile Include="Assets\Script\SystemController\MessageController.cs" />
+     <Compile Include="Assets\Script\SystemController\PlayerController.cs" />
+     <Compile Include="Assets\Script\SystemController\WorldMapController.cs" />
+     <Compile Include="Assets\Script\Test\AStartPlayer.cs" />
+     <Compile Include="Assets\Script\Test\Code.cs" />
+     <Compile Include="Assets\Script\Test\MailTestModel.cs" />
+     <Compile Include="Assets\Script\Test\MoveObstacle.cs" />
+     <Compile Include="Assets\Script\Test\Test.cs" />
+     <Compile Include="Assets\Script\Test\TestFight.cs" />
+     <Compile Include="Assets\Script\Test\TestMMOMemory.cs" />
+     <Compile Include="Assets\Script\Test\TestMonsterAI.cs" />
+     <Compile Include="Assets\Script\Test\TestMonsterAI1.cs" />
+     <Compile Include="Assets\Script\UI\Base\EventTriggerListener.cs" />
+     <Compile Include="Assets\Script\UI\Base\UISceneViewBase.cs" />
+     <Compile Include="Assets\Script\UI\Base\UIViewBase.cs" />
+     <Compile Include="Assets\Script\UI\Base\UIWindowViewBase.cs" />
+     <Compile Include="Assets\Script\UI\LayerUIManager.cs" />
+     <Compile Include="Assets\Script\UI\UIView\Common\UITipItemView.cs" />
+     <Compile Include="Assets\Script\UI\UIView\Common\UITipView.cs" />
+     <Compile Include="Assets\Script\UI\UIView\SceneUIManager.cs" />
+     <Compile Include="Assets\Script\UI\UIView\UIItem\UIGameServerItemView.cs" />
+     <Compile Include="Assets\Script\UI\UIView\UIItem\UIGameServerPageItemView.cs" />
+     <Compile Include="Assets\Script\UI\UIView\UIScene\MainCity\SmallMapHelper.cs" />
+     <Compile Include="Assets\Script\UI\UIView\UIScene\MainCity\UIMainCityMenusView.cs" />
+     <Compile Include="Assets\Script\UI\UIView\UIScene\MainCity\UIMainCityRoleInfoView.cs" />
+     <Compile Include="Assets\Script\UI\UIView\UIScene\MainCity\UIMainCitySkillSlotView.cs" />
+     <Compile Include="Assets\Script\UI\UIView\UIScene\MainCity\UIMainCitySkillView.cs" />
+     <Compile Include="Assets\Script\UI\UIView\UIScene\MainCity\UIMainCitySmallMapView.cs" />
+     <Compile Include="Assets\Script\UI\UIView\UIScene\SelectRoleViews\UISelectRoleDeleteRoleView.cs" />
+     <Compile Include="Assets\Script\UI\UIView\UIScene\SelectRoleViews\UISelectRoleDragView.cs" />
+     <Compile Include="Assets\Script\UI\UIView\UIScene\SelectRoleViews\UISelectRoleJobDescView.cs" />
+     <Compile Include="Assets\Script\UI\UIView\UIScene\SelectRoleViews\UISelectRoleJobItemView.cs" />
+     <Compile Include="Assets\Script\UI\UIView\UIScene\SelectRoleViews\UISelectRoleRoleItemView.cs" />
+     <Compile Include="Assets\Script\UI\UIView\UIScene\UISceneInitView.cs" />
+     <Compile Include="Assets\Script\UI\UIView\UIScene\UISceneLoadingView.cs" />
+     <Compile Include="Assets\Script\UI\UIView\UIScene\UISceneLogOnView.cs" />
+     <Compile Include="Assets\Script\UI\UIView\UIScene\UISceneMainCityView.cs" />
+     <Compile Include="Assets\Script\UI\UIView\UIScene\UISceneSelectRoleView.cs" />
+     <Compile Include="Assets\Script\UI\UIView\UIViewManager.cs" />
+     <Compile Include="Assets\Script\UI\UIView\UIViewUtil.cs" />
+     <Compile Include="Assets\Script\UI\UIView\UIWindow\GameLevel\UIGameLevelDetailView.cs" />
+     <Compile Include="Assets\Script\UI\UIView\UIWindow\GameLevel\UIGameLevelFailView.cs" />
+     <Compile Include="Assets\Script\UI\UIView\UIWindow\GameLevel\UIGameLevelMapItemView.cs" />
+     <Compile Include="Assets\Script\UI\UIView\UIWindow\GameLevel\UIGameLevelMapPointView.cs" />
+     <Compile Include="Assets\Script\UI\UIView\UIWindow\GameLevel\UIGameLevelMapView.cs" />
+     <Compile Include="Assets\Script\UI\UIView\UIWindow\GameLevel\UIGameLevelRewardView.cs" />
+     <Compile Include="Assets\Script\UI\UIView\UIWindow\GameLevel\UIGameLevelVictoryView.cs" />
+     <Compile Include="Assets\Script\UI\UIView\UIWindow\GameServer\UIGameServerEnterView.cs" />
+     <Compile Include="Assets\Script\UI\UIView\UIWindow\GameServer\UIGameServerSelectView.cs" />
+     <Compile Include="Assets\Script\UI\UIView\UIWindow\LogOn\UILogOnView.cs" />
+     <Compile Include="Assets\Script\UI\UIView\UIWindow\LogOn\UIRegView.cs" />
+     <Compile Include="Assets\Script\UI\UIView\UIWindow\Role\UIRoleInfoDetailView.cs" />
+     <Compile Include="Assets\Script\UI\UIView\UIWindow\Role\UIRoleInfoDragView.cs" />
+     <Compile Include="Assets\Script\UI\UIView\UIWindow\Role\UIRoleInfoEquipView.cs" />
+     <Compile Include="Assets\Script\UI\UIView\UIWindow\Role\UIRoleInfoView.cs" />
+     <Compile Include="Assets\Script\UI\UIView\UIWindow\UILoadingView.cs" />
+     <Compile Include="Assets\Script\UI\UIView\UIWindow\UIMessageView.cs" />
+     <Compile Include="Assets\Script\UI\UIView\UIWindow\WorldMap\UIWorldMapFailView.cs" />
+     <Compile Include="Assets\Script\UI\UIView\UIWindow\WorldMap\UIWorldMapItemView.cs" />
+     <Compile Include="Assets\Script\UI\UIView\UIWindow\WorldMap\UIWorldMapView.cs" />
+     <Compile Include="Assets\Script\Utils\EncryptUtil.cs" />
+     <Compile Include="Assets\Script\Utils\GameObjectUtil.cs" />
+     <Compile Include="Assets\Script\Utils\GameUtil.cs" />
+     <Compile Include="Assets\Script\Utils\IOUtil.cs" />
+     <Compile Include="Assets\Script\Utils\StringUtil.cs" />
+     <Compile Include="Assets\Script\Utils\UGUISpriteAnimation.cs" />
+     <Compile Include="Assets\Script\XLuaFramework\GameMgr.cs" />
+     <Compile Include="Assets\Script\XLuaFramework\LuaMgr.cs" />
+     <Compile Include="Assets\UHUDText\Content\Script\Core\Constructors\HUDTextInfo.cs" />
+     <Compile Include="Assets\UHUDText\Content\Script\Core\Utils\bl_TextOnCollision.cs" />
+     <Compile Include="Assets\UHUDText\Content\Script\Core\bl_HUDText.cs" />
+     <Compile Include="Assets\UHUDText\Content\Script\Core\bl_Text.cs" />
+     <Compile Include="Assets\UHUDText\Content\Script\Internal\Enum\bl_Guidance.cs" />
+     <Compile Include="Assets\UHUDText\Content\Script\Internal\Utils\bl_UHTUtils.cs" />
+     <Compile Include="Assets\UHUDText\Example\Script\bl_ExampleUI.cs" />
+     <Compile Include="Assets\UHUDText\Example\Script\bl_RandomBot.cs" />
+     <Compile Include="Assets\UHUDText\Example\Script\bl_TestMouseEvent.cs" />
+     <Compile Include="Assets\UHUDText\Example\Script\bl_UHTCamera.cs" />
+     <Compile Include="Assets\XLua\Examples\01_Helloworld\Helloworld.cs" />
+     <Compile Include="Assets\XLua\Examples\02_U3DScripting\LuaBehaviour.cs" />
+     <Compile Include="Assets\XLua\Examples\04_LuaObjectOrented\InvokeLua.cs" />
+     <Compile Include="Assets\XLua\Examples\05_NoGc\NoGc.cs" />
+     <Compile Include="Assets\XLua\Examples\06_Coroutine\Coroutine.cs" />
+     <Compile Include="Assets\XLua\Examples\06_Coroutine\Coroutine_Runner.cs" />
+     <Compile Include="Assets\XLua\Examples\07_AsyncTest\AsyncTest.cs" />
+     <Compile Include="Assets\XLua\Examples\07_AsyncTest\MessageBox.cs" />
+     <Compile Include="Assets\XLua\Examples\08_Hotfix\HotfixTest.cs" />
+     <Compile Include="Assets\XLua\Examples\08_Hotfix\HotfixTest2.cs" />
+     <Compile Include="Assets\XLua\Examples\08_Hotfix\StatefullTest.cs" />
+     <Compile Include="Assets\XLua\Examples\09_GenericMethod\Foo.cs" />
+     <Compile Include="Assets\XLua\Examples\09_GenericMethod\GenericMethodExample.cs" />
+     <Compile Include="Assets\XLua\Examples\10_SignatureLoader\SignatureLoaderTest.cs" />
+     <Compile Include="Assets\XLua\Examples\ExampleGenConfig.cs" />
+     <Compile Include="Assets\XLua\Src\CodeEmit.cs" />
+     <Compile Include="Assets\XLua\Src\CopyByValue.cs" />
+     <Compile Include="Assets\XLua\Src\DelegateBridge.cs" />
+     <Compile Include="Assets\XLua\Src\GenAttributes.cs" />
+     <Compile Include="Assets\XLua\Src\GenConfig.cs" />
+     <Compile Include="Assets\XLua\Src\LuaBase.cs" />
+     <Compile Include="Assets\XLua\Src\LuaDLL.cs" />
+     <Compile Include="Assets\XLua\Src\LuaEnv.cs" />
+     <Compile Include="Assets\XLua\Src\LuaException.cs" />
+     <Compile Include="Assets\XLua\Src\LuaFunction.cs" />
+     <Compile Include="Assets\XLua\Src\LuaTable.cs" />
+     <Compile Include="Assets\XLua\Src\MethodWarpsCache.cs" />
+     <Compile Include="Assets\XLua\Src\ObjectCasters.cs" />
+     <Compile Include="Assets\XLua\Src\ObjectPool.cs" />
+     <Compile Include="Assets\XLua\Src\ObjectTranslator.cs" />
+     <Compile Include="Assets\XLua\Src\ObjectTranslatorPool.cs" />
+     <Compile Include="Assets\XLua\Src\SignatureLoader.cs" />
+     <Compile Include="Assets\XLua\Src\StaticLuaCallbacks.cs" />
+     <Compile Include="Assets\XLua\Src\TemplateEngine\TemplateEngine.cs" />
+     <Compile Include="Assets\XLua\Src\TypeExtensions.cs" />
+     <Compile Include="Assets\XLua\Src\Utils.cs" />
+     <Compile Include="Assets\XLua\Tutorial\CSharpCallLua\CSCallLua.cs" />
+     <Compile Include="Assets\XLua\Tutorial\LoadLuaScript\ByFile\ByFile.cs" />
+     <Compile Include="Assets\XLua\Tutorial\LoadLuaScript\ByString\ByString.cs" />
+     <Compile Include="Assets\XLua\Tutorial\LoadLuaScript\Loader\CustomLoader.cs" />
+     <Compile Include="Assets\XLua\Tutorial\LuaCallCSharp\LuaCallCs.cs" />
+     <None Include="Assets\AstarPathfindingProject\Editor\EditorAssets\Materials\Navmesh.shader" />
+     <None Include="Assets\XLua\Examples\07_AsyncTest\Resources\message_box.lua.txt" />
+     <None Include="Assets\XLua\Examples\06_Coroutine\Resources\cs_coroutine.lua.txt" />
+     <None Include="Assets\XLua\Src\Editor\LinkXmlGen\LinkXmlGen.tpl.txt" />
+     <None Include="Assets\XLua\Examples\02_U3DScripting\LuaTestScript.lua.txt" />
+     <None Include="Assets\Plugins\FingerGestures\Readme.txt" />
+     <None Include="Assets\AstarPathfindingProject\ExampleScenes\Materials\Projector Multiply.shader" />
+     <None Include="Assets\XLua\Examples\07_AsyncTest\Resources\async_test.lua.txt" />
+     <None Include="Assets\XLua\Tutorial\LoadLuaScript\ByFile\Resources\byfile.lua.txt" />
+     <None Include="Assets\XLua\Examples\06_Coroutine\Resources\coruntine_test.lua.txt" />
+     <None Include="Assets\XLua\Src\Editor\Template\LuaWrapPusher.tpl.txt" />
+     <None Include="Assets\XLua\Src\Editor\Template\LuaDelegateBridge.tpl.txt" />
+     <None Include="Assets\AstarPathfindingProject\ExampleScenes\Materials\DiffuseAlwaysVisible.shader" />
+     <None Include="Assets\XLua\Resources\xlua\util.lua.txt" />
+     <None Include="Assets\UHUDText\Documentation\ReadMe.txt" />
+     <None Include="Assets\SceneModel\SceneModel\ShanGu\Shader\MogoSkybox.shader" />
+     <None Include="Assets\XLua\Examples\03_UIEvent\ButtonInteraction.lua.txt" />
+     <None Include="Assets\AstarPathfindingProject\ExampleScenes\Materials\Projector Light.shader" />
+     <None Include="Assets\Demigiant\DOTween\readme.txt" />
+     <None Include="Assets\XLua\Src\Editor\Template\TemplateCommon.lua.txt" />
+     <None Include="Assets\XLua\Src\Editor\Template\LuaEnumWrap.tpl.txt" />
+     <None Include="Assets\SceneModel\SceneModel\ShanGu\Shader\MogoTransparentDiffuse.shader" />
+     <None Include="Assets\AstarPathfindingProject\ExampleScenes\Example8_PathTypes\SquareShader.shader" />
+     <None Include="Assets\XLua\Resources\perf\profiler.lua.txt" />
+     <None Include="Assets\XLua\Src\Editor\Template\LuaDelegateWrap.tpl.txt" />
+     <None Include="Assets\XLua\Resources\perf\memory.lua.txt" />
+     <None Include="Assets\AstarPathfindingProject\Editor\EditorAssets\Materials\NavmeshOutline.shader" />
+     <None Include="Assets\XLua\Src\Editor\Template\LuaRegister.tpl.txt" />
+     <None Include="Assets\Editor\AssetBundle\AssetBundleConfig.xml" />
+     <None Include="Assets\XLua\Src\Editor\Template\LuaInterfaceBridge.tpl.txt" />
+     <None Include="Assets\XLua\Src\Editor\Template\LuaClassWrap.tpl.txt" />
+     <None Include="Assets\XLua\CHANGELOG.txt" />
+     <None Include="Assets\XLua\Resources\tdr\tdr.lua.txt" />
+     <None Include="Assets\AstarPathfindingProject\link.xml" />
+     <None Include="Assets\XLua\Src\Editor\Template\PackUnpack.tpl.txt" />
+     <None Include="Assets\Plugins\PathologicalGames\readme.txt" />
+ <Reference Include="UnityEngine.UI">
+ <HintPath>E:/UnityEditor5.6.3/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Networking">
+ <HintPath>E:/UnityEditor5.6.3/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TestRunner">
+ <HintPath>E:/UnityEditor5.6.3/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll</HintPath>
+ </Reference>
+ <Reference Include="nunit.framework">
+ <HintPath>E:/UnityEditor5.6.3/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/net35/unity-custom/nunit.framework.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Analytics">
+ <HintPath>E:/UnityEditor5.6.3/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.HoloLens">
+ <HintPath>E:/UnityEditor5.6.3/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.VR">
+ <HintPath>E:/UnityEditor5.6.3/Unity/Editor/Data/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
+ </Reference>
+ <Reference Include="Pathfinding.ClipperLib">
+ <HintPath>D:/BaiduNetdiskDownload/Unity_WorkSpace/mmoTest/Assets/AstarPathfindingProject/Plugins/Clipper/Pathfinding.ClipperLib.dll</HintPath>
+ </Reference>
+ <Reference Include="Pathfinding.Ionic.Zip.Reduced">
+ <HintPath>D:/BaiduNetdiskDownload/Unity_WorkSpace/mmoTest/Assets/AstarPathfindingProject/Plugins/DotNetZip/Pathfinding.Ionic.Zip.Reduced.dll</HintPath>
+ </Reference>
+ <Reference Include="Pathfinding.JsonFx">
+ <HintPath>D:/BaiduNetdiskDownload/Unity_WorkSpace/mmoTest/Assets/AstarPathfindingProject/Plugins/JsonFx/Pathfinding.JsonFx.dll</HintPath>
+ </Reference>
+ <Reference Include="Pathfinding.Poly2Tri">
+ <HintPath>D:/BaiduNetdiskDownload/Unity_WorkSpace/mmoTest/Assets/AstarPathfindingProject/Plugins/Poly2Tri/Pathfinding.Poly2Tri.dll</HintPath>
+ </Reference>
+ <Reference Include="DOTween">
+ <HintPath>D:/BaiduNetdiskDownload/Unity_WorkSpace/mmoTest/Assets/Demigiant/DOTween/DOTween.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{FDD0D37B-2AA5-A8C9-BEA6-49B9D11A3BAE}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>

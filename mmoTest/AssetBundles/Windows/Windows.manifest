@@ -1,0 +1,133 @@
+ManifestFileVersion: 0
+CRC: 1580170666
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: download/prefab/effect/common/effect_hurt.assetbundle
+      Dependencies: {}
+    Info_1:
+      Name: download/prefab/roleprefab/player/role_mainplayer_juchui.assetbundle
+      Dependencies: {}
+    Info_2:
+      Name: download/prefab/roleprefab/player/role_mainplayer_zhanshi.assetbundle
+      Dependencies: {}
+    Info_3:
+      Name: download/prefab/roleprefab/monster/role_monster_jiakechong.assetbundle
+      Dependencies: {}
+    Info_4:
+      Name: download/prefab/roleprefab/npc/npc_zhujian.assetbundle
+      Dependencies: {}
+    Info_5:
+      Name: download/prefab/roleprefab/monster/role_monster_1.assetbundle
+      Dependencies: {}
+    Info_6:
+      Name: download/prefab/roleprefab/player/role_mainplayer_cike.assetbundle
+      Dependencies: {}
+    Info_7:
+      Name: download/prefab/roleprefab/monster/role_monster_2.assetbundle
+      Dependencies: {}
+    Info_8:
+      Name: download/prefab/roleprefab/player/role_mainplayer_fashi.assetbundle
+      Dependencies: {}
+    Info_9:
+      Name: download/prefab/effect/common/effect_penxue.assetbundle
+      Dependencies: {}
+    Info_10:
+      Name: download/prefab/effect/role/role_mainplayer_cike_effect_phy1_madebymyself.assetbundle
+      Dependencies: {}
+    Info_11:
+      Name: download/prefab/effect/role/role_mainplayer_cike_effect_phy_1.assetbundle
+      Dependencies: {}
+    Info_12:
+      Name: download/prefab/effect/role/role_mainplayer_cike_effect_phy_2.assetbundle
+      Dependencies: {}
+    Info_13:
+      Name: download/prefab/effect/role/role_mainplayer_cike_effect_phy_3.assetbundle
+      Dependencies: {}
+    Info_14:
+      Name: download/prefab/effect/role/role_mainplayer_cike_effect_skill_1.assetbundle
+      Dependencies: {}
+    Info_15:
+      Name: download/prefab/effect/role/role_mainplayer_cike_effect_skill_2.assetbundle
+      Dependencies: {}
+    Info_16:
+      Name: download/prefab/effect/role/role_mainplayer_cike_effect_skill_3.assetbundle
+      Dependencies: {}
+    Info_17:
+      Name: download/prefab/effect/role/role_mainplayer_cike_effect_skill_4.assetbundle
+      Dependencies: {}
+    Info_18:
+      Name: download/prefab/effect/role/role_mainplayer_cike_effect_skill_5.assetbundle
+      Dependencies: {}
+    Info_19:
+      Name: download/prefab/effect/role/role_mainplayer_cike_effect_skill_6.assetbundle
+      Dependencies: {}
+    Info_20:
+      Name: download/prefab/effect/role/role_monster_jiakechong_effect_phy_1.assetbundle
+      Dependencies: {}
+    Info_21:
+      Name: download/prefab/effect/role/role_monster_jiakechong_effect_skill_1.assetbundle
+      Dependencies: {}
+    Info_22:
+      Name: download/prefab/effect/role/role_monster_jiakechong_effect_skill_2.assetbundle
+      Dependencies: {}
+    Info_23:
+      Name: download/prefab/effect/role/role_monster_jiakechong_effect_skill_3.assetbundle
+      Dependencies: {}
+    Info_24:
+      Name: download/prefab/effect/role/role_monster_lanlujiefei_effect_phy_1.assetbundle
+      Dependencies: {}
+    Info_25:
+      Name: download/prefab/effect/role/role_monster_nvyao_effect_phy_1.assetbundle
+      Dependencies: {}
+    Info_26:
+      Name: download/prefab/effect/role/role_monster_nvyao_effect_phy_2.assetbundle
+      Dependencies: {}
+    Info_27:
+      Name: download/scene/scene_selectrole.unity
+      Dependencies: {}
+    Info_28:
+      Name: download/scene/gamescene_hupaocun.unity
+      Dependencies: {}
+    Info_29:
+      Name: download/scene/gamescene_hangzhou.unity
+      Dependencies: {}
+    Info_30:
+      Name: download/scene/gamescene_changan.unity
+      Dependencies: {}
+    Info_31:
+      Name: download/scene/gamescene_shangu.unity
+      Dependencies: {}
+    Info_32:
+      Name: download/scene/gamescene_shangu2.unity
+      Dependencies: {}
+    Info_33:
+      Name: download/scene/gamescene_shangu3.unity
+      Dependencies: {}
+    Info_34:
+      Name: download/scene/gamescene_digong1.unity
+      Dependencies: {}
+    Info_35:
+      Name: download/scene/gamescene_digong2.unity
+      Dependencies: {}
+    Info_36:
+      Name: download/scene/gamescene_rongyan1.unity
+      Dependencies: {}
+    Info_37:
+      Name: download/scene/gamescene_rongyan2.unity
+      Dependencies: {}
+    Info_38:
+      Name: download/scene/gamescene_rongyan3.unity
+      Dependencies: {}
+    Info_39:
+      Name: download/scene/gamescene_pingyuan1.unity
+      Dependencies: {}
+    Info_40:
+      Name: download/scene/gamescene_shamo1.unity
+      Dependencies: {}
+    Info_41:
+      Name: download/scene/gamescene_xuedi1.unity
+      Dependencies: {}
+    Info_42:
+      Name: download/scene/gamescene_xuedi2.unity
+      Dependencies: {}
