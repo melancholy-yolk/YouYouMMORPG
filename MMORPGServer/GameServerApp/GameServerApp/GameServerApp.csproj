@@ -1,0 +1,230 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F52420F7-0B51-436D-8B1F-BA7F93B0991A}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GameServerApp</RootNamespace>
+    <AssemblyName>GameServerApp</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Mmcoy.Framework">
+      <HintPath>..\..\..\..\youyoures\youyoures\youyou_Framework\Mmcoy.Lib\Mmcoy.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CacheModel\Generate\Log_GameLevelCacheModel.cs" />
+    <Compile Include="CacheModel\Generate\Log_KillMonsterCacheModel.cs" />
+    <Compile Include="CacheModel\Generate\Log_ReceiveGoodsCacheModel.cs" />
+    <Compile Include="CacheModel\Generate\RoleCacheModel.cs" />
+    <Compile Include="CacheModel\Generate\RoleSkillCacheModel.cs" />
+    <Compile Include="CacheModel\Generate\Role_PassGameLevelDetailCacheModel.cs" />
+    <Compile Include="ClientSocket.cs" />
+    <Compile Include="Common\Crc16.cs" />
+    <Compile Include="Common\EventDispatcher.cs" />
+    <Compile Include="Common\GameDataTableParser.cs" />
+    <Compile Include="Common\IProto.cs" />
+    <Compile Include="Common\LocalFileMgr.cs" />
+    <Compile Include="Common\MMO_MemoryStream.cs" />
+    <Compile Include="Common\SecurityUtil.cs" />
+    <Compile Include="Common\Singleton.cs" />
+    <Compile Include="Common\StringUtil.cs" />
+    <Compile Include="Common\ZlibHelper.cs" />
+    <Compile Include="Common\Zlib\Adler32.cs" />
+    <Compile Include="Common\Zlib\Deflate.cs" />
+    <Compile Include="Common\Zlib\InfBlocks.cs" />
+    <Compile Include="Common\Zlib\InfCodes.cs" />
+    <Compile Include="Common\Zlib\Inflate.cs" />
+    <Compile Include="Common\Zlib\InfTree.cs" />
+    <Compile Include="Common\Zlib\StaticTree.cs" />
+    <Compile Include="Common\Zlib\SupportClass.cs" />
+    <Compile Include="Common\Zlib\Tree.cs" />
+    <Compile Include="Common\Zlib\ZInputStream.cs" />
+    <Compile Include="Common\Zlib\Zlib.cs" />
+    <Compile Include="Common\Zlib\ZOutputStream.cs" />
+    <Compile Include="Common\Zlib\ZStream.cs" />
+    <Compile Include="Common\Zlib\ZStreamException.cs" />
+    <Compile Include="Controller\RoleController.cs" />
+    <Compile Include="Data\Base\AbstractDBModel.cs" />
+    <Compile Include="Data\Base\AbstractEntity.cs" />
+    <Compile Include="Data\Create\ChapterDBModel.cs" />
+    <Compile Include="Data\Create\ChapterEntity.cs" />
+    <Compile Include="Data\Create\EquipDBModel.cs" />
+    <Compile Include="Data\Create\EquipEntity.cs" />
+    <Compile Include="Data\Create\GameLevelDBModel.cs" />
+    <Compile Include="Data\Create\GameLevelEntity.cs" />
+    <Compile Include="Data\Create\GameLevelGradeDBModel.cs" />
+    <Compile Include="Data\Create\GameLevelGradeEntity.cs" />
+    <Compile Include="Data\Create\GameLevelMonsterDBModel.cs" />
+    <Compile Include="Data\Create\GameLevelMonsterEntity.cs" />
+    <Compile Include="Data\Create\GameLevelRegionDBModel.cs" />
+    <Compile Include="Data\Create\GameLevelRegionEntity.cs" />
+    <Compile Include="Data\Create\ItemDBModel.cs" />
+    <Compile Include="Data\Create\ItemEntity.cs" />
+    <Compile Include="Data\Create\JobDBModel.cs" />
+    <Compile Include="Data\Create\JobEntity.cs" />
+    <Compile Include="Data\Create\JobLevelDBModel.cs" />
+    <Compile Include="Data\Create\JobLevelEntity.cs" />
+    <Compile Include="Data\Create\LanguageDBModel.cs" />
+    <Compile Include="Data\Create\LanguageEntity.cs" />
+    <Compile Include="Data\Create\MaterialDBModel.cs" />
+    <Compile Include="Data\Create\MaterialEntity.cs" />
+    <Compile Include="Data\Create\MessageDBModel.cs" />
+    <Compile Include="Data\Create\MessageEntity.cs" />
+    <Compile Include="Data\Create\NPCDBModel.cs" />
+    <Compile Include="Data\Create\NPCEntity.cs" />
+    <Compile Include="Data\Create\RechargeShopDBModel.cs" />
+    <Compile Include="Data\Create\RechargeShopEntity.cs" />
+    <Compile Include="Data\Create\ShopCategoryDBModel.cs" />
+    <Compile Include="Data\Create\ShopCategoryEntity.cs" />
+    <Compile Include="Data\Create\ShopDBModel.cs" />
+    <Compile Include="Data\Create\ShopEntity.cs" />
+    <Compile Include="Data\Create\SkillDBModel.cs" />
+    <Compile Include="Data\Create\SkillEntity.cs" />
+    <Compile Include="Data\Create\SkillLevelDBModel.cs" />
+    <Compile Include="Data\Create\SkillLevelEntity.cs" />
+    <Compile Include="Data\Create\SpriteDBModel.cs" />
+    <Compile Include="Data\Create\SpriteEntity.cs" />
+    <Compile Include="Data\Create\TaskDBModel.cs" />
+    <Compile Include="Data\Create\TaskEntity.cs" />
+    <Compile Include="Data\Create\WorldMapDBModel.cs" />
+    <Compile Include="Data\Create\WorldMapEntity.cs" />
+    <Compile Include="Data\Ext\SkillLevelDBModel.cs" />
+    <Compile Include="DBConn.cs" />
+    <Compile Include="DBModel\Generate\Log_GameLevelDBModel.cs" />
+    <Compile Include="DBModel\Generate\Log_KillMonsterDBModel.cs" />
+    <Compile Include="DBModel\Generate\Log_ReceiveGoodsDBModel.cs" />
+    <Compile Include="DBModel\Generate\RoleDBModel.cs" />
+    <Compile Include="DBModel\Generate\RoleSkillDBModel.cs" />
+    <Compile Include="DBModel\Generate\Role_PassGameLevelDetailDBModel.cs" />
+    <Compile Include="Entity\Generate\GameServerConfigEntity.cs" />
+    <Compile Include="Entity\Generate\Log_GameLevelEntity.cs" />
+    <Compile Include="Entity\Generate\Log_GoodsInEntity.cs" />
+    <Compile Include="Entity\Generate\Log_GoodsOutEntity.cs" />
+    <Compile Include="Entity\Generate\Log_KillMonsterEntity.cs" />
+    <Compile Include="Entity\Generate\Log_ReceiveGoodsEntity.cs" />
+    <Compile Include="Entity\Generate\Log_ShopBuyProductEntity.cs" />
+    <Compile Include="Entity\Generate\RechargeProductEntity.cs" />
+    <Compile Include="Entity\Generate\RechargeRecordEntity.cs" />
+    <Compile Include="Entity\Generate\RoleEntity.cs" />
+    <Compile Include="Entity\Generate\RoleSkillEntity.cs" />
+    <Compile Include="Entity\Generate\Role_BackpackEntity.cs" />
+    <Compile Include="Entity\Generate\Role_EquipEntity.cs" />
+    <Compile Include="Entity\Generate\Role_ItemEntity.cs" />
+    <Compile Include="Entity\Generate\Role_MaterialEntity.cs" />
+    <Compile Include="Entity\Generate\Role_PassGameLevelDetailEntity.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Proto\Backpack_GoodsChangeReturnProto.cs" />
+    <Compile Include="Proto\Backpack_SearchProto.cs" />
+    <Compile Include="Proto\Backpack_SearchReturnProto.cs" />
+    <Compile Include="Proto\GameLevel\GameLevel_EnterProto.cs" />
+    <Compile Include="Proto\GameLevel\GameLevel_EnterReturnProto.cs" />
+    <Compile Include="Proto\GameLevel\GameLevel_FailProto.cs" />
+    <Compile Include="Proto\GameLevel\GameLevel_FailReturnProto.cs" />
+    <Compile Include="Proto\GameLevel\GameLevel_ResurgenceProto.cs" />
+    <Compile Include="Proto\GameLevel\GameLevel_ResurgenceReturnProto.cs" />
+    <Compile Include="Proto\GameLevel\GameLevel_VictoryProto.cs" />
+    <Compile Include="Proto\GameLevel\GameLevel_VictoryReturnProto.cs" />
+    <Compile Include="Proto\Goods_EquipPutProto.cs" />
+    <Compile Include="Proto\Goods_EquipPutReturnProto.cs" />
+    <Compile Include="Proto\Goods_SearchEquipDetailProto.cs" />
+    <Compile Include="Proto\Goods_SearchEquipDetailReturnProto.cs" />
+    <Compile Include="Proto\Goods_SellToSysProto.cs" />
+    <Compile Include="Proto\Goods_SellToSysReturnProto.cs" />
+    <Compile Include="Proto\Goods_UseItemProto.cs" />
+    <Compile Include="Proto\Goods_UseItemReturnProto.cs" />
+    <Compile Include="Proto\ProtoCodeDef.cs" />
+    <Compile Include="Proto\RoleData_GoldChangeReturnProto.cs" />
+    <Compile Include="Proto\RoleData_MondeyChangeReturnProto.cs" />
+    <Compile Include="Proto\RoleData_RechargeProductReturnProto.cs" />
+    <Compile Include="Proto\RoleData_RechargeReturnProto.cs" />
+    <Compile Include="Proto\RoleData_SkillReturnProto.cs" />
+    <Compile Include="Proto\Role\RoleOperation_CreateRoleProto.cs" />
+    <Compile Include="Proto\Role\RoleOperation_CreateRoleReturnProto.cs" />
+    <Compile Include="Proto\Role\RoleOperation_DeleteRoleProto.cs" />
+    <Compile Include="Proto\Role\RoleOperation_DeleteRoleReturnProto.cs" />
+    <Compile Include="Proto\Role\RoleOperation_EnterGameProto.cs" />
+    <Compile Include="Proto\Role\RoleOperation_EnterGameReturnProto.cs" />
+    <Compile Include="Proto\Role\RoleOperation_LogOnGameServerProto.cs" />
+    <Compile Include="Proto\Role\RoleOperation_LogOnGameServerReturnProto.cs" />
+    <Compile Include="Proto\Role\RoleOperation_SelectRoleInfoProto.cs" />
+    <Compile Include="Proto\Role\RoleOperation_SelectRoleInfoReturnProto.cs" />
+    <Compile Include="Proto\Shop_BuyProductProto.cs" />
+    <Compile Include="Proto\Shop_BuyProductReturnProto.cs" />
+    <Compile Include="Proto\System_GameServerConfigReturnProto.cs" />
+    <Compile Include="Proto\System_SendLocalTimeProto.cs" />
+    <Compile Include="Proto\System_ServerTimeReturnProto.cs" />
+    <Compile Include="Proto\Task_SearchTaskProto.cs" />
+    <Compile Include="Proto\Task_SearchTaskReturnProto.cs" />
+    <Compile Include="Proto\Test\Mail_Get_DetailProto.cs" />
+    <Compile Include="Proto\Test\Mail_Request_ListProto.cs" />
+    <Compile Include="Proto\Test\TestProto.cs" />
+    <Compile Include="Proto\WorldMap_CurrRoleMoveProto.cs" />
+    <Compile Include="Proto\WorldMap_CurrRoleResurgenceProto.cs" />
+    <Compile Include="Proto\WorldMap_CurrRoleUpdateInfoProto.cs" />
+    <Compile Include="Proto\WorldMap_CurrRoleUseSkillProto.cs" />
+    <Compile Include="Proto\WorldMap_InitRoleProto.cs" />
+    <Compile Include="Proto\WorldMap_OtherRoleDieProto.cs" />
+    <Compile Include="Proto\WorldMap_OtherRoleEnterProto.cs" />
+    <Compile Include="Proto\WorldMap_OtherRoleLeaveProto.cs" />
+    <Compile Include="Proto\WorldMap_OtherRoleMoveProto.cs" />
+    <Compile Include="Proto\WorldMap_OtherRoleResurgenceProto.cs" />
+    <Compile Include="Proto\WorldMap_OtherRoleUpdateInfoProto.cs" />
+    <Compile Include="Proto\WorldMap_OtherRoleUseSkillProto.cs" />
+    <Compile Include="Proto\WorldMap\WorldMap_PosProto.cs" />
+    <Compile Include="Proto\WorldMap_RoleAlreadyEnterProto.cs" />
+    <Compile Include="Proto\WorldMap\WorldMap_RoleEnterProto.cs" />
+    <Compile Include="Proto\WorldMap\WorldMap_RoleEnterReturnProto.cs" />
+    <Compile Include="PVP\WorldMap\WorldMapSceneController.cs" />
+    <Compile Include="PVP\WorldMap\WorldMapSceneMgr.cs" />
+    <Compile Include="Role.cs" />
+    <Compile Include="RoleMgr.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Proto\Shop\" />
+    <Folder Include="Proto\Skill\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
